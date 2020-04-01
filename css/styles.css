@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Merriweather", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  align-self: center;
+  font-size: 1.1em;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1em;
+  padding-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #25323d;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.3em;
+  }
+}
+
+h3 {
+  color: #25323d;
+  font-size: 0.9em;
+  border-top: solid 1px #25323d;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  h3 {
+    padding-top: 50px;
+  }
+}
+
+h4 {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: center;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+form {
+  flex-direction: column;
+  width: 100%;
+}
+
+label {
+  color: #a0a0a0;
+  font-size: 0.7em;
+}
+
+option[hidden] {
+  color: gray;
+}
+
+textarea {
+  font-size: 0.75em;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 1s;
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+textarea:focus {
+  border: solid 1px #25323d;
+  box-shadow: 0 0 5px black;
+  outline: none;
+}
+
+button {
+  height: 50px;
+  background-color: #44c9be;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  margin: 20px 0 20px 0;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.blue {
+  background-color: #c3eaf0;
+}
+
+.field {
+  padding: 10px 0;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.field input,
+.field select {
+  width: 100%;
+  height: 40px;
+  font-size: 0.75em;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  transition: box-shadow 1s;
+}
+.field input:focus,
+.field select:focus {
+  border: solid 1px #25323d;
+  box-shadow: 0 0 5px black;
+  outline: none;
+}
+.field input::placeholder {
+  font-style: italic;
+  font-size: 0.8em;
+  color: #a0a0a0;
+  text-align: right;
+  text-transform: capitalize;
+}
+.field label {
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .field {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .field input,
+.field select {
+    width: 70%;
+  }
+  .field label {
+    width: 30%;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 600px;
+  }
+}
+
+.subtitle {
+  color: #a0a0a0;
+  width: 100%;
+  text-align: center;
+  padding: 0 0 40px 0;
+  margin: 0 0 5px 0;
+  border-bottom: solid 5px #25323d;
+}
+
+.main-menu {
+  height: 70px;
+  width: 100%;
+  background: #25323d;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+@media (min-width: 768px) {
+  .spacing {
+    margin-bottom: 40px;
+  }
+}
+
+.inline-label {
+  padding: 0 0 0 10px;
+  margin: 0;
+  align-self: center;
+}
+
+.checks {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#preselected,
+h4,
+p {
+  color: #a0a0a0;
+}
+
+#zipcode {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  #zipcode {
+    width: 100px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
