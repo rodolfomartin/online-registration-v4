@@ -19,78 +19,81 @@
     </section>
     <section class="container">
         <form class="flex" method="POST" accept-charset="UTF-8">
-            <h3>Contact information</h3>
-            
-            <div class="flex field">
-            <label for="name">Full Name</label>
-            <input name="name" id="name" type="text" placeholder="Required" required>
-            </div>
+            <fieldset>
+                <legend>Contact information</legend>
+                
+                <div class="flex field">
+                <label for="name">Full Name</label>
+                <input name="name" id="name" type="text" placeholder="Required" required>
+                </div>
 
-            <div class="flex field">
-            <label for="email">Email Address</label>
-            <input name="email" id="email" type="email" placeholder="Required" required>
-            </div>
+                <div class="flex field">
+                <label for="email">Email Address</label>
+                <input name="email" id="email" type="email" placeholder="Required" required>
+                </div>
 
-            <div class="flex field">
-            <label for="phone">Phone Number</label>
-            <input name="phone" id="phone" type="tel">
-            </div>
+                <div class="flex field">
+                <label for="phone">Phone Number</label>
+                <input name="phone" id="phone" type="tel" placeholder="1 888 4567">
+                </div>
 
-            <div class="flex field">
-            <label for="address">Street Address</label>
-            <input name="address" id="address" type="text">
-            </div>
-            
-            <div class="flex field">
-            <label for="city">City</label>
-            <input name="city" id="city" type="text">
-            </div> 
+                <div class="flex field">
+                <label for="address">Street Address</label>
+                <input name="address" id="address" type="text" placeholder="eg. Washington St. 59">
+                </div>
+                
+                <div class="flex field">
+                <label for="city">City</label>
+                <input name="city" id="city" type="text">
+                </div> 
 
-            <div class="flex field">
-            <label for="state">State</label>
-            <select name="state" id="state">
-                    <option disabled selected hidden id="preselected">Choose State</option>
-                    <option value="ari">Arizona</option>
-                    <option value="cali">California</option>
-            </select>
-            </div>
+                <div class="flex field">
+                <label for="state">State</label>
+                <select name="state" id="state" required>
+                        <option disabled selected hidden value="">Choose State</option>
+                        <option value="ari">Arizona</option>
+                        <option value="cali">California</option>
+                </select>
+                </div>
 
-            <div class="flex field">
-            <label class="spacing" for="zipcode">Zip Code</label>
-            <input class="spacing" id="zipcode" type="number">
-            </div>
+                <div class="flex field">
+                <label class="spacing" for="zipcode">Zip Code</label>
+                <input class="spacing" id="zipcode" type="number">
+                </div>
+            </fieldset>
 
-            <h3>Newsletter</h3>
-            <p class="description">Select the newsletters you would like to recieve</p>
+            <fieldset>
+                <legend>Newsletter</legend>
+                <p class="description">Select the newsletters you would like to recieve</p>
 
-            <div class="flex checks">
-                <input type="checkbox" id="html-news">
-                <label class="inline-label" for="html-news">HTML News</label>
-            </div>
+                <div class="flex checks">
+                    <input type="checkbox" id="html-news">
+                    <label class="inline-label" for="html-news">HTML News</label>
+                </div>
 
-            <div class="flex checks">
-                <input type="checkbox" id="css-news">
-                <label class="inline-label" for="css-news">CSS News</label>
-            </div>
+                <div class="flex checks">
+                    <input type="checkbox" id="css-news">
+                    <label class="inline-label" for="css-news">CSS News</label>
+                </div>
 
-            <div class="flex checks">
-                <input type="checkbox" id="javascript-news">
-                <label class="inline-label" for="javascript-news">JavaScript News</label>
-            </div>
+                <div class="flex checks">
+                    <input type="checkbox" id="javascript-news">
+                    <label class="inline-label" for="javascript-news">JavaScript News</label>
+                </div>
 
-            <p class="description">Newsletter format</p>
+                <p class="description">Newsletter format</p>
 
-            <div class="flex checks">
-                <input name="newsletter-format" type="radio" id="html" checked><label class="inline-label" for="html">HTML</label>
-            </div>
+                <div class="flex checks">
+                    <input name="newsletter-format" type="radio" id="html" checked><label class="inline-label" for="html">HTML</label>
+                </div>
 
-            <div class="flex checks">
-                <input name="newsletter-format" type="radio" id="plain-text"><label class="inline-label"  for="plain-text">Plain text</label>
-            </div>
+                <div class="flex checks">
+                    <input name="newsletter-format" type="radio" id="plain-text"><label class="inline-label"  for="plain-text">Plain text</label>
+                </div>
 
-            <p class="description">Other topics you'd like to hear about</p>
-            <textarea cols="50" rows="10"></textarea>
-
+                <p class="description">Other topics you'd like to hear about</p>
+                <textarea id="other" name="other" cols="50" rows="10"></textarea>
+            </fieldset>
             <button type="submit">Sign Up</button>
 
         </form>
