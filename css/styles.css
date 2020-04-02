@@ -82,6 +82,7 @@ textarea {
   transition: box-shadow 1s;
   width: 100%;
   padding-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 textarea:focus {
@@ -106,6 +107,11 @@ button {
 
 .blue {
   background-color: #c3eaf0;
+}
+
+.description {
+  display: block;
+  padding-top: 20px;
 }
 
 .field {

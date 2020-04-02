@@ -79,6 +79,7 @@ textarea {
     @include fieldformat;
     width: 100%;
     padding-top: 15px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -100,6 +101,11 @@ button {
 
 .blue {
     background-color: rgb(195, 234, 240);
+}
+
+.description {
+    display: block;
+    padding-top: 20px;
 }
 
 .field {
